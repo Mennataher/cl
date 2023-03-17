@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(img/istockphoto-621371796-612x612.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Result</h1>
+    <label>Enter the first number</label>
+    <br>
+    <input id="x" type="text">
+    <br>
+    <label>Enter the second number</label>
+    <br>
+    <input id="y" type="text">
+    <br>
+    <button onclick="calc()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mult()">*</button>
+    <button onclick="div()">/</button>
+    <p id="m"></p>
+    <script>
+        function calc() {
+            x = Number(document.getElementById("x").value);
+            y = Number(document.getElementById("y").value);
+            z = x + y;
+            document.getElementById("m").innerHTML = z
+
+        }
+
+        function sub() {
+            x = Number(document.getElementById("x").value);
+            y = Number(document.getElementById("y").value);
+            z = x - y;
+            document.getElementById("m").innerHTML = z
+
+        }
+
+        function mult() {
+            x = Number(document.getElementById("x").value);
+            y = Number(document.getElementById("y").value);
+            z = x * y;
+            document.getElementById("m").innerHTML = z
+
+        }
+
+        function div() {
+            x = Number(document.getElementById("x").value);
+            y = Number(document.getElementById("y").value);
+            z = x / y;
+            document.getElementById("m").innerHTML = z
+
+        }
+    </script>
+</body>
+
+</html>
